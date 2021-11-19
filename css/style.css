@@ -1,0 +1,112 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-area {
+  align-self: center;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.slider {
+  border: 2px solid #f8f8ff;
+  border-radius: 8px;
+  width: 800px;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-self: center;
+}
+
+.slider div {
+  width: auto;
+  margin: 2px;
+}
+
+.slider #next-arrow {
+  position: absolute;
+  bottom: 0.5em;
+  right: 0em;
+  z-index: 1;
+  background: #607d8b;
+  background-size: 100%;
+  border: 0;
+  width: 30px;
+  height: 25px;
+  text-indent: -9999px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform: rotate(90deg);
+}
+
+.slider #prev-arrow {
+  position: absolute;
+  bottom: 2em;
+  right: 0em;
+  z-index: 1;
+  background: #607d8b;
+  background-size: 100%;
+  border: 0;
+  width: 30px;
+  height: 25px;
+  text-indent: -9999px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform: rotate(-90deg);
+}
+
+.slick-active {
+  animation-name: transition;
+}
+
+.slick-slide {
+  transition: transition;
+  animation-duration: 1s;
+}
+
+.slick-frame {
+  visibility: hidden;
+}
+
+h1 {
+  color: darkslateblue;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Zen Kurenaido", sans-serif;
+}
+h3 {
+  color: darkgrey;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Zen Kurenaido", sans-serif;
+}
+
+@keyframes transition {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}

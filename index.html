@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto+Mono:wght@100&family=Zen+Kurenaido&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body style="background: url('./images/background.jpg')">
+    <div class="main">
+      <section class="slider-area slider">
+        <div><img src="images\1.jpg" alt="" /></div>
+        <div><img src="images\2.jpg" alt="" /></div>
+        <div><img src="images\3.jpg" alt="" /></div>
+        <div><img src="images\4.jpg" alt="" /></div>
+        <div><img src="images\5.jpg" alt="" /></div>
+        <div><img src="images\6.jpg" alt="" /></div>
+        <div><img src="images\7.jpg" alt="" /></div>
+        <div><img src="images\8.jpg" alt="" /></div>
+        <div><img src="images\9.jpg" alt="" /></div>
+        <div><img src="images\10.jpg" alt="" /></div>
+        <div><img src="images\11.jpg" alt="" /></div>
+        <div><img src="images\12.jpg" alt="" /></div>
+        <div><img src="images\13.jpg" alt="" /></div>
+        <div><img src="images\14.jpg" alt="" /></div>
+        <div><img src="images\15.jpg" alt="" /></div>
+        <div><img src="images\16.jpg" alt="" /></div>
+        <div><img src="images\17.jpg" alt="" /></div>
+        <div><img src="images\18.jpg" alt="" /></div>
+        <div><img src="images\19.jpg" alt="" /></div>
+        <div><img src="images\20.jpg" alt="" /></div>
+        <div><img src="images\21.jpg" alt="" /></div>
+        <div><img src="images\22.jpg" alt="" /></div>
+        <div><img src="images\23.jpg" alt="" /></div>
+        <div><img src="images\24.jpg" alt="" /></div>
+        <div><img src="images\25.jpg" alt="" /></div>
+      </section>
+
+      <div class="text-area">
+        <h1>What is Lorem Ipsum?</h1>
+        <h3>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </h3>
+      </div>
+    </div>
+
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/slick.js"></script>
+    <script>
+      $(".slider").slick({
+        rows: 2,
+        dots: false,
+        infinite: true,
+        slidesToShow: 2,
+        slidestoScroll: 1,
+        speed: 1000,
+        centerMode: true,
+        variableWidth: true,
+        nextArrow:
+          '<span id="next-arrow" class="material-icons"> arrow_forward_ios </span>',
+        prevArrow:
+          '<span id="prev-arrow" class="material-icons">arrow_back_ios</span>',
+      });
+    </script>
+  </body>
+</html>
